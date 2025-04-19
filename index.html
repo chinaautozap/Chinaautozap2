@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChinaAutoZap.ru – Запчасти для китайских авто</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header { background: #d71920; color: white; padding: 1em 2em; text-align: center; }
+    nav { background: #333; color: white; display: flex; justify-content: center; padding: 0.5em; }
+    nav a { color: white; margin: 0 1em; text-decoration: none; }
+    .hero { background: url('banner.jpg') no-repeat center center; background-size: cover; padding: 4em 2em; color: white; text-align: center; }
+    .container { padding: 2em; }
+    .filters, .catalog { margin-bottom: 2em; }
+    select, input[type="text"] { padding: 0.5em; margin-right: 1em; }
+    .part { background: white; padding: 1em; margin-bottom: 1em; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ChinaAutoZap.ru</h1>
+    <p>Каталог запчастей для китайских автомобилей</p>
+  </header>
+  <nav>
+    <a href="#">Главная</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#about">О нас</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <section class="hero">
+    <h2>Найдите нужную запчасть за 3 клика!</h2>
+    <p>Поиск по марке, модели, году и категории</p>
+  </section>
+  <div class="container">
+    <div class="filters">
+      <select><option>Марка</option></select>
+      <select><option>Модель</option></select>
+      <select><option>Год</option></select>
+      <select><option>Категория</option></select>
+      <input type="text" placeholder="Поиск...">
+      <button>Найти</button>
+    </div>
+    <div class="catalog" id="catalog">
+      <div class="part">
+        <h3>Фара левая – Chery Tiggo 7 Pro</h3>
+        <p>Год: 2021 | Категория: Оптика</p>
+        <p>Цена: 12 500 ₽</p>
+      </div>
+      <div class="part">
+        <h3>Амортизатор передний – Haval Jolion</h3>
+        <p>Год: 2022 | Категория: Подвеска</p>
+        <p>Цена: 8 900 ₽</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
